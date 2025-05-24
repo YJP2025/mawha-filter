@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes flow {
+  0%, 100% { background-position: 0% 50%, 100% 50%; }
+  50% { background-position: 100% 50%, 0% 50%; }
+}
+
+.animate-flow {
+  animation: flow 12s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
